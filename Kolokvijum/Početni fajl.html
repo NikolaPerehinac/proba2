@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<title> Zadatak </title>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="Zadatak.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+		<script>
+			$(document).ready(function(){ 
+			$("button").click(function(){ 
+				$("ul").each(function(){ 
+				$(this).toggleClass("arhiva"); 
+				}); 
+			}); 
+			});
+		</script>	
+	</head>
+	<body>
+		<div id="wrapper">
+			<div id="header">
+				<h1>Naslov sajta H1</h1>
+			</div>
+			<div id="menu">
+				<div class="naslov">Kategorije:</div>
+				<div class="div1">
+					<a>Politika</a> <br/>
+					<a>Sport</a> <br/>
+					<a>Umetnost</a> <br/>
+					<a>Priroda</a>
+				</div>
+				<div class="naslov">Arhiva:</div>
+				<div class="div1">
+				
+				  <ul>
+					<li>Januar 2015</li> 
+					<li>Decembar 2014</li>
+					<li>Novembar 2014</li> 
+					<li>Oktobar 2014</li>
+				  </ul>
+				</div>
+			</div>
+			<div id="main">
+				<h2>Naslov 1</h2>
+				<img src="oranges.jpg">
+				<p>Donec nulla. Aenean eu augue ac nisl tincidunt rutrum. Proin erat justo, pharetra eget, posuere at, malesuada et, nulla. Donec pretium nibh sed est faucibus suscipit. Nunc nisi. Nullam vehicula. In ipsum lorem, bibendum sed, consectetuer et, gravida id, erat. Ut imperdiet, leo vel condimentum faucibus, risus justo feugiat purus, vitae congue nulla diam non urna.Donec nulla. Aenean eu augue ac nisl tincidunt rutrum. Proin erat justo, pharetra eget, posuere at, malesuada et, nulla. Donec pretium nibh sed est faucibus suscipit. Nunc nisi. Nullam vehicula. In ipsum lorem, bibendum sed, consectetuer et, gravida id, erat. Ut imperdiet, leo vel condimentum faucibus, risus justo feugiat purus, vitae congue nulla diam non urna.</p>
+				<h2>Naslov 2</h2>
+				<p>Donec nulla. Aenean eu augue ac nisl tincidunt rutrum. Proin erat justo, pharetra eget, posuere at, malesuada et, nulla. Donec pretium nibh sed est faucibus suscipit. Nunc nisi. Nullam vehicula. In ipsum lorem, bibendum sed, consectetuer et, gravida id, erat. Ut imperdiet, leo vel condimentum faucibus, risus justo feugiat purus, vitae congue nulla diam non urna.</p>
+			</div>
+			<!--/* Kreirati dugme Stil arhive (iznad futera) koji će na klik miša naizmenično menjati stil "ul" elemenata u stil definisan klasom arhiva 
+(Koristiti Jquery) */-->
+			
+				<button>Stil arhive</button>
+							
+			<div id="footer">
+				<p>Footer</p>
+								
+			</div>
+		</div>
+		<!--Korišćenjem Javascript-a omogućiti da se po učitavanju strane promeni sadržaj Futera-->
+		<script>
+			document.getElementById("footer").innerHTML = "Copyrights &copy All rights reserved "; 
+		</script>
+	</body>
+	
+</html>

@@ -1,0 +1,98 @@
+/*Postavite boju pozadine na #333;*/
+body{
+    background-color: #333;
+}
+
+/*Svojstvo wrapper-a: bela slova, širinaXvisina: 800x700px, a margine i padding respektivno auto i 10px */
+#wrapper{
+    color: white;
+    height: 800px;
+    width: 700px;
+    margin: auto 10px;
+    padding: auto 10px;
+
+}
+/*Svojstvo header-a: slika pozadine je bg.jpg, a margine i padding iznose po 5px */
+#header{
+    background-image: url(bg.jpg);
+    margin: 5px;
+    padding: 5px;
+}
+
+/*Svojstva h1 naslova u hederu: boja slova je bela, normalne debljine, a font je verdana */
+#header h1{
+    color: white;
+    font-family: Verdana;
+}
+
+/*Svojstvo klase naslova: gornji i donju padding je 2px, a levi 10px, boja slova je bela, boldovana, a boja pozadine je #ff7a09 */
+.naslov{
+    padding-top: 2px;
+    padding-bottom: 2px;
+    padding-left: 10px;
+    color: white;
+    font-weight: bold;
+    background-color: #ff7a09;
+}
+/*Svojstva prvog div elementa koji sledi posle elementa sa klasom "naslov" su: padding od 10px, boja slova #ff7a09, boja pozadine #FFBE9F
+i border debljine 1px, boje #ff7a09 i vrste solid*/
+.div1{
+    padding: 10px;
+    color: #ff7a09;
+    background-color: #ffbe9f;
+    border: 1px #ff7a09 solid;
+    
+}
+
+/*Kada se mišem pređe preko linkova i elemenata liste slova postaju sva velika i boje #333*/
+a:hover{
+    text-transform: uppercase;
+    color: #333;
+}
+li:hover{
+    text-transform: uppercase;
+    color: #333;
+}
+/* Margine diva "menu" iznose 15px, njegova visina je 500px i pozicioniran je levo */
+#menu{
+    margin: 15px;
+    height: 500px;
+    float: left;
+}
+/* Div "main" ima prored između linija 25px */
+#main{
+    line-height: 25px;
+}
+
+/* Naslovi h2 u divu "main" imaju boju slova #ff7a09 */
+#main h2{
+    color: #ff7a09;
+}
+
+/* Slika u "main" divu ima poziciju desno, desnu marginu od 10px i border debljine 2px, boje #ccc i vrste solid */
+#main img{
+    float: right;
+    margin-right: 10px;
+    border: 10px #ccc solid ;
+}
+/* Svojstva futera su: font je veličine 12px i vrste arial, tekst je centriran, sa padding-om od 10px i gornjom linijom boje #ccc solid 1px*/
+#footer{
+    font-size: 12px;
+    font-family: arial;
+    text-align: center;
+    padding: 10px;
+    border-top: white solid 10px ;
+}
+/* Napraviti klasu "arhiva". Njena svojstva omogućavaju skidanje simbola liste i podešavanje parametara unutrašnjih i spoljašnjih margina tako
+ da cela lista liči na listu Kategorije */
+.arhiva{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+} 
+
+/* Kreirati dugme Stil arhive (iznad futera) koji će na klik miša naizmenično menjati stil "ul" elemenata u stil definisan klasom arhiva 
+(Koristiti Jquery) */
+
+/*Korišćenjem Javascript-a omogućiti da se po učitavanju strane promeni sadržaj Futera (vidi 2. sliku) */
+
